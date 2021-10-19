@@ -70,6 +70,9 @@ color:#fff;
 .home-image path:hover {
   opacity: 1;
 }
+path.current-floor {
+   opacity: 1;
+}
 .main-info{
   flex-grow: 1;
   text-align: center;
@@ -88,7 +91,7 @@ color:#fff;
   background-color: #fff;
   cursor: pointer;
 }
-.counter-arrow-down {
+.counter-down {
   transform: rotateX(180deg);
 }
 .main-title {
