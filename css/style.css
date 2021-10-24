@@ -92,7 +92,7 @@ path.current-floor {
   cursor: pointer;
 }
 .counter-down {
-  transform: rotateX(180deg);
+  transform: rotateX(180deg); /*переворачиваем на 180 градусов*/
 }
 .main-title {
   font-family: "Bebas Neue" sans-serif;
@@ -102,7 +102,7 @@ path.current-floor {
   color: #635854;
   line-height: 44px;
 }
-.counter {
+.counter-item {
   color: #635854;
   font-size: 124px;
   font-family: "Bebas Neue" sans-serif;
@@ -115,4 +115,103 @@ path.current-floor {
   border:none;
   padding: 16px 36px;
   cursor: pointer;
+}
+.modal {
+    position: fixed; /* фиксированная позиция */
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex; /* по умолчанию, окно скрыто */
+    align-items: center; /* выравниваем окно по середине по вертикали */
+    justify-content: center; /* выравниваем по середине по горизонтали */
+    opacity: 0;
+    transform: scale(0); /*ф-ция трансформации scale - ф-ция масштабирования*/
+}
+.is-open {
+    opacity: 1;
+    transform: scale(1);
+}
+.modal-dialog {
+  position: absolute;
+  flex-grow: 1;
+  width: 1003px;
+  height: 565px;
+  background-color: #fff;
+  display: flex;
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: transform 0.2s, opacity 0.2s;
+  transition-delay: 0.2s;
+
+}
+.is-open > .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+.modal-image{
+  width: 60%;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.modal-info {
+  background-color: #FFFFFF;
+  width: 40%;
+padding: 0 46px;
+}
+.modal-title {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  padding-top: 50px; 
+}
+.flat-list {
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  list-style-type: none;
+}
+.flat-item {
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 10px;
+  /*margin-bottom: 10px;*/
+}
+.flats path {
+  opacity: 0;
+  cursor: pointer;
+}
+.flats path:hover {
+  opacity: 1;
+}
+.modal-dialog-close {
+  cursor: pointer;
+  position: absolute;
+  right: 27px;
+  top: 38px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.flat-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+}
+.flat-link:hover {
+  color: #3596f5;
+  text-decoration: underline;
+}
+.isChooseFlat {
+  color: #3596f5;
+}
+.modal-comment {
+  font-size: 16px;
+  line-height: 19px;
+  font-style: italic;
+  color: #635854;
+  margin-top: 56px;
 }
