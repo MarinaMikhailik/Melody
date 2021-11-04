@@ -8,6 +8,12 @@ $(document).ready(function () {
   const btnModalClose = $('.modal-dialog-close');
   const pathFlat = $('.flats path');
   const btnFlat = $('.flat-link');
+  const btnMenu = $('.menu-button');
+  const pnlNavBar = $('.navbar-panel');
+
+  btnMenu.on('click', function(){
+    pnlNavBar.toggle("fast");//показать скрыть
+  })
 
   pathFloor.on('mouseover', function(){
     currentfloor = $(this).attr('data-floor');

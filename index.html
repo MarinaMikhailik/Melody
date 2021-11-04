@@ -15,11 +15,12 @@
 
 <body>
   <header class="header">
-    <div class="navbar">
+    <div class="navbar container">
       <a href="./index.html" class="logo">
         <img src="img/logo.svg" alt="logo: Melody" />
       </a>
-      <nav class="navbar-nav">
+      <div class="navbar-panel">
+              <nav class="navbar-nav">
         <ul class="navbar-menu">
           <li class="navbar-element">
             <a href="#" class="navbar-link">Подобрать<br />квартиру</a>
@@ -42,12 +43,18 @@
         <span class="navbar-text">Закажите звонок:</span>
         <a href="tel:+78431234567" class="navbar-phone">8 (843) 123-45-67</a>
       </div>
+      </div>
+      <!-- /.navbar-panel-->
+      <button class="menu-button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
     </div>
     <!-- /.navbar -->
   </header>
-  <div class="main">
-    <div class="main-image">
-      <svg class="home-image" width="734" height="640" viewBox="0 0 734 640" fill="none"
+  <div class="main container">
+      <svg class="home-image"  viewBox="0 0 734 640" fill="none"
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="734" height="640" fill="url(#pattern0)" />
         <defs>
@@ -89,7 +96,7 @@
         <path data-floor="18" d="M222 152V126L444 69.3L513 171V192L443.7 100.3L222 152Z" fill="#3595F6"
           fill-opacity="0.75" />
       </svg>
-    </div>
+
     <!-- /.main-image -->
     <div class="main-info">
       <h2 class="main-title">Выберите желаемый этаж</h2>
@@ -117,9 +124,9 @@
       </button>
       <div class="modal-image">
         <h3 class="modal-title">Этаж <span class="counter">02</span></h3>
-        <svg class="flats" width="433" height="408" viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg"
+        <svg class="flats"  viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
-          <image id="image0" width="433" height="408" xlink:href="img/Floor.png" />
+          <image id="image0"  xlink:href="img/Floor.png" />
           <path data-flat="40" d="M388 81V141H314V148H267.5V131H247V32.5H338.5V16H405V81H388Z" fill="#3595F6"
             fill-opacity="0.75" />
           <path data-flat="41" d="M314 148.5H268V200H367.5V205H387.5V141H314V148.5Z" fill="#3595F6"
